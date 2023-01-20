@@ -1,3 +1,3 @@
 # eureco_time
 
-![](https://github.com/kumagallium/eureco_time/workflows/Eureco Time Action/badge.svg)
+![](https://github.com/kumagallium/eureco_time/workflows/eureco_time.yml/badge.svg)
