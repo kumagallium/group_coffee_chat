@@ -2,7 +2,7 @@ name: Eureco Time Action
 
 on:
   schedule:
-    - cron: '40 * * * *'
+    - cron: '10 * * * *'
 
 jobs:
   eureco_time:
@@ -17,4 +17,8 @@ jobs:
       - name: Get Python version
         run: python -V
       - name: Run Python
+        env:
+          MEMBERS: ${{ secrets.MEMBERS }}
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+          SLACK_HOOK_URL: ${{ secrets.SLACK_HOOK_URL }}
         run: python group_generator.py
