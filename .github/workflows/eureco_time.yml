@@ -2,7 +2,7 @@ name: Eureco Time Action
 
 on:
   schedule:
-    - cron: '29 * * * *'
+    - cron: '40 * * * *'
 
 jobs:
   eureco_time:
