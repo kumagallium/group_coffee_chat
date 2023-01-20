@@ -1,0 +1,20 @@
+name: Eureco Time Action
+
+on:
+  schedule:
+    - cron: '27 * * * *'
+
+jobs:
+  eureco_time:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+      - name: Get Python version
+        run: python -V
+      - name: Run Python
+        run: python group_generator.py
