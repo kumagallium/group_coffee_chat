@@ -69,7 +69,7 @@ def main():
                     "type": "section",
                     "text": {
                         "type": "mrkdwn",
-                        "text": "本日のトークテーマです！参考にしてください。\n```"+topics_m+"```"
+                        "text": "本日のトークテーマです！（ご参考までに）\n```"+topics_m+"```"
                     }
                 }
             ]
