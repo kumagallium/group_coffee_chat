@@ -75,7 +75,7 @@ def main():
             ]
         }
     ]
-    message = "本日のグループは、以下の通りです。"
+    message = "<@eureco-design> \n本日は、Coffee Chatの日です。\nグループは、以下の通りです。"
     send_message_to_slack(message, attachments)
 
 
