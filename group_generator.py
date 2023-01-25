@@ -46,10 +46,8 @@ def main():
     topics_m =  "\n*".join(topics)
     topics_m =  "*" + topics_m
 
-
-    print(group1_m)
-    print(group2_m)
-    print(topics_m)
+    mentions = eval(os.environ["SLACK_MENTIONS"])
+    mention_m = "<"+"> <".join(mentions)+">"
 
     attachments = [
         {
@@ -75,7 +73,7 @@ def main():
             ]
         }
     ]
-    message = "<@eureco-design> \n本日は、Coffee Chatの日です。\nグループは、以下の通りです。"
+    message = mention_m + "\n本日は、Coffee Chatの日です。\nグループは、以下の通りです。"
     send_message_to_slack(message, attachments)
 
 
