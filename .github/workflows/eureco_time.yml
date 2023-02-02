@@ -21,4 +21,5 @@ jobs:
           MEMBERS: ${{ secrets.MEMBERS }}
           SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           SLACK_HOOK_URL: ${{ secrets.SLACK_HOOK_URL }}
+          SLACK_MENTIONS: ${{ secrets.SLACK_MENTIONS }}
         run: python group_generator.py
