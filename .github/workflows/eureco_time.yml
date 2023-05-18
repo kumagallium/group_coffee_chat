@@ -22,4 +22,6 @@ jobs:
           SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           SLACK_HOOK_URL: ${{ secrets.SLACK_HOOK_URL }}
           SLACK_MENTIONS: ${{ secrets.SLACK_MENTIONS }}
+          NUM_DIVISIONS: ${{ secrets.NUM_DIVISIONS }}
+          GROUP_NAMES: ${{ secrets.GROUP_NAMES }}
         run: python group_generator.py
